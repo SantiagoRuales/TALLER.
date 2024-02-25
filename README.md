@@ -251,3 +251,43 @@ button.addEventListener("click", incrementCounter);
 - `color: red;`: Establece el color del texto del mensaje de error en rojo. Esto hace que el mensaje de error sea visualmente prominente y fácilmente distinguible del resto del contenido.
 
 - `display: none;`: Oculta inicialmente el elemento con la clase "error-message". Cuando un elemento tiene display: none;, no se muestra en la página. Esto significa que cuando la página se carga por primera vez, el mensaje de error no será visible para el usuario.
+
+### Tercer Archivo `ejercicio3.js`
+```
+// Función para validar el nombre antes de enviar el formulario
+function validateName(event) {
+    var nameInput = document.getElementById("nameInput");
+    var errorMessage = document.getElementById("errorMessage");
+  
+    if (nameInput.value.length < 3) {
+      errorMessage.style.display = "block";
+      event.preventDefault(); // Evitar que se envíe el formulario
+    } else {
+      errorMessage.style.display = "none";
+    }
+  }
+  
+  // Obtener referencia al formulario
+  var form = document.getElementById("nameForm");
+  
+  // Asignar evento de envío al formulario
+  form.addEventListener("submit", validateName);
+```
+
+- `function validateName(event) { ... }`: Se define una función llamada validateName que toma un parámetro event, que representa el evento que desencadenó la llamada a la función (en este caso, el evento de envío del formulario).
+
+- `var nameInput = document.getElementById("nameInput");`: Obtiene una referencia al elemento de entrada de texto con el id "nameInput", que es donde los usuarios ingresan su nombre.
+
+- `var errorMessage = document.getElementById("errorMessage");`: Obtiene una referencia al elemento de mensaje de error con el id "errorMessage".
+
+- `if (nameInput.value.length < 3) { ... }`: Comprueba si la longitud del valor ingresado en el campo de nombre es menor que 3 caracteres.
+
+- `errorMessage.style.display = "block";`: Si el nombre tiene menos de 3 caracteres, muestra el mensaje de error estableciendo su estilo de visualización como "block". Esto hará que el mensaje de error sea visible en la página.
+
+- `event.preventDefault();`: Evita que el formulario se envíe si la validación falla. Esto detiene el comportamiento predeterminado del evento de envío del formulario, que es enviar los datos al servidor, y evita que la página se recargue.
+
+- `else { errorMessage.style.display = "none"; }`: Si el nombre tiene al menos 3 caracteres, oculta el mensaje de error estableciendo su estilo de visualización como "none". Esto asegura que el mensaje de error desaparezca si se cumple la condición de validación.
+
+- `var form = document.getElementById("nameForm");`: Obtiene una referencia al formulario con el id "nameForm".
+
+- `form.addEventListener("submit", validateName);`: Asigna un evento de envío al formulario. Cuando el formulario se envía (por ejemplo, cuando se hace clic en el botón de enviar), se llama a la función validateName para validar el nombre ingresado antes de que se envíen los datos del formulario al servidor.
