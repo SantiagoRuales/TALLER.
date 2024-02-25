@@ -291,3 +291,86 @@ function validateName(event) {
 - `var form = document.getElementById("nameForm");`: Obtiene una referencia al formulario con el id "nameForm".
 
 - `form.addEventListener("submit", validateName);`: Asigna un evento de envío al formulario. Cuando el formulario se envía (por ejemplo, cuando se hace clic en el botón de enviar), se llama a la función validateName para validar el nombre ingresado antes de que se envíen los datos del formulario al servidor.
+
+### Cuarto archivo `ejercicio4.html`
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería de Imágenes</title>
+<link rel="stylesheet" type="text/css" href="ejercicio4.css">
+</head>
+<body>
+  <img id="mainImage" src="imagenes/ima6.jfif" alt="Imagen Principal">
+  <div id="thumbnails">
+    <img class="thumbnail" src="imagenes/ima1.jfif" alt="Miniatura 1">
+    <img class="thumbnail" src="imagenes/ima2.jfif" alt="Miniatura 2">
+    <img class="thumbnail" src="imagenes/ima3.jfif" alt="Miniatura 3">
+    <img class="thumbnail" src="imagenes/ima4.jfif" alt="Miniatura 4">
+    <img class="thumbnail" src="imagenes/ima5.jfif" alt="Miniatura 5">
+    <img class="thumbnail" src="imagenes/ima6.jfif" alt="Miniatura 6">
+  </div>
+
+  <script src="ejercicio4.js" defer></script>
+</body>
+</html>
+```
+
+- `<head>`: Aquí se incluyen metadatos y enlaces a recursos externos como CSS y JavaScript.
+
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: Define cómo el contenido debe ser renderizado en dispositivos móviles. En este caso, establece que el ancho del viewport debe ser igual al ancho del dispositivo y que la escala inicial es 1.0.
+
+- `<title>Galería de Imágenes</title>`: Establece el título de la página que se mostrará en la pestaña del navegador.
+
+- `<link rel="stylesheet" type="text/css" href="ejercicio4.css">`: Enlaza un archivo CSS externo llamado "ejercicio4.css" que contiene estilos para la galería de imágenes.
+
+- `<body>`: Aquí se encuentra el contenido visible de la página.
+
+- `<img id="mainImage" src="imagenes/ima6.jfif" alt="Imagen Principal">`: Una etiqueta de imagen (<img>) con un id establecido como "mainImage". Esta es la imagen principal que se muestra en la galería. El atributo src especifica la ruta de la imagen y el atributo alt proporciona un texto alternativo que se muestra si la imagen no se carga correctamente.
+
+- `<div id="thumbnails">`: Un contenedor (<div>) con un id establecido como "thumbnails". Este contenedor contendrá las miniaturas de las imágenes.
+
+- `<img class="thumbnail" src="imagenes/ima1.jfif" alt="Miniatura 1">`: Etiquetas de imagen que representan las miniaturas de las imágenes. Cada miniatura tiene una clase establecida como "thumbnail", que puede ser utilizada para aplicar estilos comunes a todas las miniaturas. El atributo src especifica la ruta de la miniatura y el atributo alt proporciona un texto alternativo para la miniatura.
+
+- `<script src="ejercicio4.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio4.js" que contiene código para manejar la funcionalidad dinámica de la galería de imágenes. El atributo defer indica que el script se ejecutará después de que se analice el documento HTML, lo que garantiza que tenga acceso a todos los elementos HTML definidos anteriormente.
+
+### Cuarto Archivo `ejercicio4.css`
+```
+/* Estilos para la imagen principal */
+#mainImage {
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para las miniaturas */
+  .thumbnail {
+    width: 300px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para las miniaturas al pasar el mouse */
+  .thumbnail:hover {
+    opacity: 0.7;
+  }
+```
+
+- `#mainImage`: Este selector apunta a la imagen principal con el id "mainImage".
+
+- `max-width: 500px;`: Establece la anchura máxima de la imagen principal en 500 píxeles. Esto asegura que la imagen principal no se vuelva más grande que 500 píxeles de ancho, lo que ayuda a controlar su tamaño en pantallas más pequeñas.
+
+- `margin-bottom: 20px;`: Agrega un margen inferior de 20 píxeles a la imagen principal. Esto crea un espacio entre la imagen principal y el siguiente elemento en la página, lo que mejora la legibilidad y la estética.
+
+- `.thumbnail`: Este selector apunta a todas las imágenes con la clase "thumbnail", que representan las miniaturas en la galería de imágenes.
+
+- `width: 300px;`: Establece la anchura de todas las miniaturas en 300 píxeles. Esto asegura que todas las miniaturas tengan el mismo ancho, lo que crea uniformidad en la presentación de la galería.
+
+- `margin-right: 10px;`: Agrega un margen derecho de 10 píxeles a cada miniatura. Esto crea un espacio entre las miniaturas, lo que las separa visualmente y mejora la apariencia de la galería.
+
+- `cursor: pointer;`: Cambia el cursor del mouse cuando pasa sobre las miniaturas para indicar que son interactivas. En este caso, se establece como un puntero, que es el cursor estándar para elementos que pueden hacer clic.
+
+- `.thumbnail:hover`: Este selector apunta a las miniaturas cuando el mouse está sobre ellas (es decir, cuando se produce un evento de "hover").
+
+- `opacity: 0.7;`: Reduce la opacidad de las miniaturas al 70% cuando el mouse está sobre ellas. Esto proporciona un efecto visual de atenuación y destaca la miniatura sobre la que se encuentra el mouse.
