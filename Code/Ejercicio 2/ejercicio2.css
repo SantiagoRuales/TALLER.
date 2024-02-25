@@ -1,0 +1,12 @@
+/* Estilos para el botón */
+#clickButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el contador de clics */
+  #clickCount {
+    font-weight: bold;
+  }
+  
