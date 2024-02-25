@@ -103,3 +103,34 @@ function changeColor() {
 `document.getElementById("colorButton").addEventListener("click", changeColor);`: Esta línea agrega un evento de escucha al botón con ID "colorButton". Cuando se haga clic en este botón, se ejecutará la función changeColor(). Esto significa que cada vez que se haga clic en el botón, se generará un nuevo color aleatorio y se cambiará el color de fondo del botón.
 
 ### Archivo `ejercicio2.html`
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contador de Clics</title>
+<link rel="stylesheet" type="text/css" href="ejercicio2.css">
+</head>
+<body>
+  <button id="clickButton">Haz clic aquí</button>
+  <p>Contador de clics: <span id="clickCount">0</span></p>
+
+  <script src="ejercicio2.js" defer></script>
+</body>
+</html>
+```
+- `<head>`: Aquí se incluyen metadatos y enlaces a recursos externos como CSS y JavaScript.
+
+- `<title>Contador de Clics</title>`: Establece el título de la página que se mostrará en la pestaña del navegador.
+
+- `<link rel="stylesheet" type="text/css" href="ejercicio2.css">`: Enlaza un archivo CSS externo llamado "ejercicio2.css" que contiene estilos para la página.
+
+- `<body>`: Aquí se encuentra el contenido visible de la página.
+
+- `<button id="clickButton">Haz clic aquí</button>`: Un botón con el texto "Haz clic aquí" y un atributo id establecido como "clickButton". Este botón se utilizará para registrar los clics.
+
+- `<p>Contador de clics: <span id="clickCount">0</span></p>`: Un párrafo que muestra el texto "Contador de clics:" seguido de un elemento span con un atributo id establecido como "clickCount". El contenido inicial de este span es "0", que es el valor inicial del contador de clics.
+
+- `<script src="ejercicio2.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio2.js" que contiene código para manejar el contador de clics. El atributo defer indica que el script se ejecutará después de que se analice el documento HTML, lo que garantiza que tenga acceso a todos los elementos HTML definidos anteriormente.
