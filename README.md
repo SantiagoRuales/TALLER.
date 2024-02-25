@@ -374,3 +374,5 @@ function validateName(event) {
 - `.thumbnail:hover`: Este selector apunta a las miniaturas cuando el mouse está sobre ellas (es decir, cuando se produce un evento de "hover").
 
 - `opacity: 0.7;`: Reduce la opacidad de las miniaturas al 70% cuando el mouse está sobre ellas. Esto proporciona un efecto visual de atenuación y destaca la miniatura sobre la que se encuentra el mouse.
+
+porno
