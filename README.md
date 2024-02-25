@@ -1,4 +1,4 @@
-# TALLER DE EJERCICIOS
+                                # TALLER DE EJERCICIOS
 Este taller práctico ofrece a los estudiantes la oportunidad de poner en práctica sus conocimientos sobre el manejo de eventos en JavaScript. A través de una serie de ejercicios, los participantes explorarán en detalle cómo utilizar addEventListener para capturar eventos específicos en el navegador. Además, se enfocarán en la manipulación del objeto event para acceder a información relevante sobre la interacción del usuario. Con un énfasis en comprender el modelo de eventos en el navegador, los estudiantes desarrollarán habilidades prácticas para crear interacciones dinámicas y receptivas en aplicaciones web.
 
 ### 1. Boton Cambiante de Numero
@@ -20,6 +20,7 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 1. Descarga la carpeta code, encontraras los codigos de los anteriores ejercicios con su respectivos `ejercicio.html`, `ejercicio.js` y `ejercicio.css`
 2. Abre las carpetas deacuerdo al ejercicio que quieras observar
 3. Ejecutar en cualquier navegador que tengamos disponible en nuestro computador
+4. Tener en cuenta que los archivos que se van a ejecutar son los `html` ejemplo `ejercicio1.html` , `ejercicio2.html` y asi sucesivamente.
 
 ## Descripcion De Los Codigos
 
@@ -99,3 +100,5 @@ function changeColor() {
 - `document.getElementById("colorButton").style.backgroundColor = randomColor;`: Esta línea cambia el color de fondo del botón con ID "colorButton" al color aleatorio generado. Se accede al estilo del botón utilizando document.getElementById("colorButton").style y se cambia la propiedad backgroundColor a randomColor.
 
 `document.getElementById("colorButton").addEventListener("click", changeColor);`: Esta línea agrega un evento de escucha al botón con ID "colorButton". Cuando se haga clic en este botón, se ejecutará la función changeColor(). Esto significa que cada vez que se haga clic en el botón, se generará un nuevo color aleatorio y se cambiará el color de fondo del botón.
+
+### Archivo `ejercicio2.html`
