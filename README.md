@@ -17,15 +17,15 @@ En este ejercicio La galería de imágenes permite al usuario hacer clic en mini
 En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces (Inicio, Acerca de y Contacto) y al pasar el ratón sobre cada enlace, se implementa un efecto visual, como un cambio de color o resaltado. Esto se logra utilizando eventos de ratón para detectar cuando el cursor del ratón entra y sale del área del enlace. Además, se añade una transición suave para mejorar la experiencia del usuario, lo que significa que el cambio de estilo se realiza de forma gradual y no brusca, haciendo que la interacción sea más agradable y estética. Esto proporciona una experiencia de navegación más atractiva y fácil de usar para los usuarios.
 
 ## Como iniciar
-descarga la carpeta code, encontraras los codigos de los anteriores ejercicios con su respectivos ejercicio.html, ejercicio.js y ejercicio.css
-Abre las carpetas deacuerdo al ejercicio que quieras observar
-Ejecutar en cualquier navegador que tengamos disponible en nuestro computador
+1. Descarga la carpeta code, encontraras los codigos de los anteriores ejercicios con su respectivos `ejercicio.html`, `ejercicio.js` y `ejercicio.css`
+2. Abre las carpetas deacuerdo al ejercicio que quieras observar
+3. Ejecutar en cualquier navegador que tengamos disponible en nuestro computador
 
 ## Descripcion De Los Codigos
 
-### Archivo ejercicio.html
+### Archivo `ejercicio1.html`
 
-<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -39,3 +39,9 @@ Ejecutar en cualquier navegador que tengamos disponible en nuestro computador
   <script src="ejercicio1.js" defer></script>
 </body>
 </html>
+```
+- `<title>Cambio de Color</title>`: Establece el título de la página que se muestra en la pestaña del navegador.
+- `<link rel="stylesheet" type="text/css" href="ejercicio1.css">` Enlaza una hoja de estilo externa llamada "ejercicio1.css" para aplicar    estilos a la página.
+- `<body>` Esta sección contiene el contenido visible de la página.
+- `<button id="colorButton">Cambiar Color</button>`: Crea un botón con el texto "Cambiar Color" y un identificador único "colorButton".
+- `<script src="ejercicio1.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio1.js" y utiliza el atributo defer     para asegurarse de que el script se ejecute después de que se haya cargado el contenido de la página. Este script manejará el cambio     de color cuando se haga clic en el botón.
