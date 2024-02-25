@@ -66,3 +66,20 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 - `cursor: pointer;`: Esto establece el cursor del mouse cuando está sobre el botón. En este caso, se establece como "pointer", lo que indica que el cursor cambiará a una mano, indicando que el botón es interactivo y se puede hacer clic en él.
 
 - `}`: Cierra el bloque de declaración de estilo.
+
+### Archivo `ejercicio1.js`
+
+```
+// Función para cambiar el color de fondo de manera aleatoria
+function changeColor() {
+    // Obtener un color aleatorio en formato hexadecimal
+    var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    
+    // Asignar el color aleatorio al fondo del botón
+    document.getElementById("colorButton").style.backgroundColor = randomColor;
+  }
+  
+  document.getElementById("colorButton").addEventListener("click", changeColor);
+```
+
+  
