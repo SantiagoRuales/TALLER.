@@ -1,4 +1,4 @@
-                                # TALLER DE EJERCICIOS
+# TALLER DE EJERCICIOS
 Este taller práctico ofrece a los estudiantes la oportunidad de poner en práctica sus conocimientos sobre el manejo de eventos en JavaScript. A través de una serie de ejercicios, los participantes explorarán en detalle cómo utilizar addEventListener para capturar eventos específicos en el navegador. Además, se enfocarán en la manipulación del objeto event para acceder a información relevante sobre la interacción del usuario. Con un énfasis en comprender el modelo de eventos en el navegador, los estudiantes desarrollarán habilidades prácticas para crear interacciones dinámicas y receptivas en aplicaciones web.
 
 ### 1. Boton Cambiante de Numero
@@ -26,7 +26,8 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 
 ### Archivo `ejercicio1.html`
 
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -45,7 +46,7 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 - `<link rel="stylesheet" type="text/css" href="ejercicio1.css">` Enlaza una hoja de estilo externa llamada "ejercicio1.css" para aplicar    estilos a la página.
 - `<body>` Esta sección contiene el contenido visible de la página.
 - `<button id="colorButton">Cambiar Color</button>`: Crea un botón con el texto "Cambiar Color" y un identificador único "colorButton".
-- `<script src="ejercicio1.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio1.js" y utiliza el atributo defer     para asegurarse de que el script se ejecute después de que se haya cargado el contenido de la página. Este script manejará el cambio     de color cuando se haga clic en el botón.
+- `<script src="ejercicio1.js" defer></script>`: Enlaza un archivo JavaScript externo llamado `ejercicio1.js` y utiliza el atributo defer para asegurarse de que el script se ejecute después de que se haya cargado el contenido de la página. Este script manejará el cambio de color cuando se haga clic en el botón.
 
 ### Archivo `ejercicio1.css`
 
