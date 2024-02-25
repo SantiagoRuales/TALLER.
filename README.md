@@ -82,4 +82,20 @@ function changeColor() {
   document.getElementById("colorButton").addEventListener("click", changeColor);
 ```
 
-  
+- `function changeColor() {`: Esto define una función llamada changeColor() que se encarga de cambiar el color de fondo del botón.
+
+- `var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);`: Esta línea genera un color aleatorio en formato hexadecimal.
+
+- `Math.random()`: Genera un número aleatorio entre 0 y 1 (exclusivo).
+
+- `Math.floor()`: Redondea hacia abajo el número resultante, convirtiéndolo en un número entero.
+
+- `* 16777215`: Multiplica el número aleatorio por 16777215, que es el valor máximo que se puede obtener al convertir el color RGB más alto (255) a hexadecimal (FFFFFF).
+
+- `.toString(16)`: Convierte el número en una cadena en base 16 (hexadecimal). Esto generará un número hexadecimal de 6 dígitos.
+
+- `'#' + ...`: Concatena el signo "#" con el número hexadecimal generado, creando así una cadena que representa un color en formato hexadecimal válido.
+
+- `document.getElementById("colorButton").style.backgroundColor = randomColor;`: Esta línea cambia el color de fondo del botón con ID "colorButton" al color aleatorio generado. Se accede al estilo del botón utilizando document.getElementById("colorButton").style y se cambia la propiedad backgroundColor a randomColor.
+
+`document.getElementById("colorButton").addEventListener("click", changeColor);`: Esta línea agrega un evento de escucha al botón con ID "colorButton". Cuando se haga clic en este botón, se ejecutará la función changeColor(). Esto significa que cada vez que se haga clic en el botón, se generará un nuevo color aleatorio y se cambiará el color de fondo del botón.
