@@ -24,7 +24,7 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 
 ## Descripcion De Los Codigos
 
-### Archivo `ejercicio1.html`
+### Primer Archivo `ejercicio1.html`
 
 ```
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 - `<button id="colorButton">Cambiar Color</button>`: Crea un botón con el texto "Cambiar Color" y un identificador único "colorButton".
 - `<script src="ejercicio1.js" defer></script>`: Enlaza un archivo JavaScript externo llamado `ejercicio1.js` y utiliza el atributo defer para asegurarse de que el script se ejecute después de que se haya cargado el contenido de la página. Este script manejará el cambio de color cuando se haga clic en el botón.
 
-### Archivo `ejercicio1.css`
+### Primer Archivo `ejercicio1.css`
 
 ```
 # colorButton {
@@ -69,7 +69,7 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 
 - `}`: Cierra el bloque de declaración de estilo.
 
-### Archivo `ejercicio1.js`
+### Primer Archivo `ejercicio1.js`
 
 ```
 // Función para cambiar el color de fondo de manera aleatoria
@@ -102,7 +102,7 @@ function changeColor() {
 
 `document.getElementById("colorButton").addEventListener("click", changeColor);`: Esta línea agrega un evento de escucha al botón con ID "colorButton". Cuando se haga clic en este botón, se ejecutará la función changeColor(). Esto significa que cada vez que se haga clic en el botón, se generará un nuevo color aleatorio y se cambiará el color de fondo del botón.
 
-### Archivo `ejercicio2.html`
+### Segundo Archivo `ejercicio2.html`
 
 ```
 <!DOCTYPE html>
@@ -134,3 +134,120 @@ function changeColor() {
 - `<p>Contador de clics: <span id="clickCount">0</span></p>`: Un párrafo que muestra el texto "Contador de clics:" seguido de un elemento span con un atributo id establecido como "clickCount". El contenido inicial de este span es "0", que es el valor inicial del contador de clics.
 
 - `<script src="ejercicio2.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio2.js" que contiene código para manejar el contador de clics. El atributo defer indica que el script se ejecutará después de que se analice el documento HTML, lo que garantiza que tenga acceso a todos los elementos HTML definidos anteriormente.
+
+### Segundo Archivo `ejercicio2.css`
+
+```
+/* Estilos para el botón */
+#clickButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el contador de clics */
+  #clickCount {
+    font-weight: bold;
+  }
+```
+- `#clickButton`: Este selector aplica estilos al botón con el id "clickButton".
+
+- `padding: 10px 20px;`: Establece un relleno interno de 10 píxeles en la parte superior e inferior y 20 píxeles en los lados izquierdo y derecho del botón. Esto crea un espacio alrededor del texto dentro del botón.
+
+- font-size: 16px;: Define el tamaño de fuente del texto del botón como 16 píxeles.
+
+- `cursor: pointer;`: Cambia el cursor del mouse cuando pasa sobre el botón para indicar que es interactivo. En este caso, se establece como un puntero, que es el cursor estándar para elementos que pueden hacer clic.
+
+- `#clickCount`: Este selector aplica estilos al elemento <span> con el id "clickCount", que se utiliza para mostrar el contador de clics.
+
+- `font-weight`: bold;: Establece el peso de la fuente del texto del contador como negrita, lo que hace que el texto sea más grueso y fácilmente distinguible del texto normal.
+
+### segundo archivo `ejercicio2.js`
+
+```
+// Obtener referencia al botón y al elemento de conteo
+var button = document.getElementById("clickButton");
+var clickCountDisplay = document.getElementById("clickCount");
+
+// Inicializar contador
+var clickCount = 0;
+
+// Función para incrementar el contador y actualizar la pantalla
+function incrementCounter() {
+  clickCount++;
+  clickCountDisplay.innerText = clickCount;
+}
+
+// Asignar evento de clic al botón
+button.addEventListener("click", incrementCounter);
+```
+- `var button = document.getElementById("clickButton");`: Esta línea obtiene una referencia al elemento del botón en el documento HTML con el id "clickButton" y la guarda en la variable button. Esto permite acceder y manipular el botón desde JavaScript.
+
+- `var clickCountDisplay = document.getElementById("clickCount");`: Aquí se obtiene una referencia al elemento <span> en el documento HTML con el id "clickCount" y se guarda en la variable clickCountDisplay. Este elemento se utiliza para mostrar el contador de clics.
+
+- `var clickCount = 0;`: Se inicializa una variable llamada clickCount con el valor 0. Esta variable se utilizará para almacenar y mantener un registro del número de clics en el botón.
+
+- `function incrementCounter() { ... }`: Se define una función llamada incrementCounter que se encarga de incrementar el contador de clics y actualizar la pantalla con el nuevo valor del contador.
+
+- `clickCount++;`: Incrementa el valor de clickCount en 1 cada vez que se llama a esta función, lo que registra un clic adicional en el botón.
+
+- `clickCountDisplay.innerText = clickCount;`: Actualiza el contenido del elemento clickCountDisplay con el valor actualizado de clickCount. Esto asegura que el contador de clics en la página se actualice y muestre el número correcto de clics.
+
+- `button.addEventListener("click", incrementCounter);`: Esta línea asigna un evento de clic al botón. Cuando el botón es clicado, se llama a la función incrementCounter, lo que incrementa el contador de clics y actualiza su visualización en la página.
+
+### Tercer archivo `ejercicio3.html`
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Nombre</title>
+<link rel="stylesheet" type="text/css" href="ejercicio3.css">
+</head>
+<body>
+  <h2>Ingrese su nombre:</h2>
+  <form id="nameForm">
+    <input type="text" id="nameInput" placeholder="Nombre">
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="errorMessage" class="error-message">El nombre debe tener al menos 3 caracteres.</p>
+
+  <script src="ejercicio3.js" defer></script>
+</body>
+</html>
+```
+- `<head>`: Aquí se incluyen metadatos y enlaces a recursos externos como CSS y JavaScript.
+
+- `<title>Formulario de Nombre</title>`: Establece el título de la página que se mostrará en la pestaña del navegador.
+
+- `<link rel="stylesheet" type="text/css" href="ejercicio3.css">`: Enlaza un archivo CSS externo llamado "ejercicio3.css" que contiene estilos para la página.
+
+- `<body>`: Aquí se encuentra el contenido visible de la página.
+
+- `<h2>Ingrese su nombre:</h2>`: Un encabezado que indica al usuario que ingrese su nombre.
+
+- `<form id="nameForm">`: Comienza un formulario con un id establecido como "nameForm". Los formularios son contenedores para elementos de entrada y botones de envío.
+
+- `<input type="text" id="nameInput" placeholder="Nombre">`: Un campo de entrada de texto donde los usuarios pueden ingresar su nombre. Tiene un id establecido como "nameInput" y un marcador de posición que muestra "Nombre" como guía para el usuario.
+
+- `<button type="submit">Enviar</button>`: Un botón de envío que enviará el formulario cuando se haga clic en él.
+
+- `<p id="errorMessage" class="error-message">El nombre debe tener al menos 3 caracteres.</p>`: Un párrafo que muestra un mensaje de error que se ocultará inicialmente. Tiene un id establecido como "errorMessage" y una clase de CSS "error-message" que probablemente se utilice para aplicar estilos específicos al mensaje de error.
+
+- `<script src="ejercicio3.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio3.js" que contiene código para manejar la validación del formulario y otros comportamientos dinámicos. El atributo defer indica que el script se ejecutará después de que se analice el documento HTML, lo que garantiza que tenga acceso a todos los elementos HTML definidos anteriormente.
+
+### Tercer Archivo `ejercicio3.css`
+```
+/* Estilos para el mensaje de error */
+.error-message {
+    color: red;
+    display: none;
+  }
+```
+- `.error-message`: Este es un selector de clase que apunta a elementos que tienen la clase "error-message".
+
+- `color: red;`: Establece el color del texto del mensaje de error en rojo. Esto hace que el mensaje de error sea visualmente prominente y fácilmente distinguible del resto del contenido.
+
+- `display: none;`: Oculta inicialmente el elemento con la clase "error-message". Cuando un elemento tiene display: none;, no se muestra en la página. Esto significa que cuando la página se carga por primera vez, el mensaje de error no será visible para el usuario.
