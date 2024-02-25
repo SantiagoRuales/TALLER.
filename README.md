@@ -55,3 +55,14 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
     cursor: pointer;
   }
   ```
+- `#colorButton`: Esto es un selector de ID en CSS. Se refiere a un elemento con el ID "colorButton". En el HTML que proporcionaste, este ID se asigna al botón "Cambiar Color".
+
+- `{`: Indica el comienzo de un bloque de declaración de estilo para el elemento seleccionado.
+
+- `padding`: 10px 20px;: Establece el relleno (padding) del botón. El primer valor, 10px, se refiere al relleno superior e inferior, mientras que el segundo valor, 20px, se refiere al relleno izquierdo y derecho. Esto crea un espacio dentro del botón entre su contenido y sus bordes.
+
+- `font-size: 16px;`: Define el tamaño de la fuente del texto dentro del botón como 16 píxeles. Esto determina la altura del texto dentro del botón.
+
+- `cursor: pointer;`: Esto establece el cursor del mouse cuando está sobre el botón. En este caso, se establece como "pointer", lo que indica que el cursor cambiará a una mano, indicando que el botón es interactivo y se puede hacer clic en él.
+
+- `}`: Cierra el bloque de declaración de estilo.
