@@ -48,3 +48,10 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 
 ### Archivo `ejercicio1.css`
 
+```
+# colorButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  ```
