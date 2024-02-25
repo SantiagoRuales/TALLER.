@@ -46,3 +46,5 @@ En este ultimo ejercicio el menú de navegación consta de al menos tres enlaces
 - `<button id="colorButton">Cambiar Color</button>`: Crea un botón con el texto "Cambiar Color" y un identificador único "colorButton".
 - `<script src="ejercicio1.js" defer></script>`: Enlaza un archivo JavaScript externo llamado "ejercicio1.js" y utiliza el atributo defer     para asegurarse de que el script se ejecute después de que se haya cargado el contenido de la página. Este script manejará el cambio     de color cuando se haga clic en el botón.
 
+### Archivo `ejercicio1.css`
+
